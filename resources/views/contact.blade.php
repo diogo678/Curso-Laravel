@@ -8,5 +8,5 @@
 <h2> teste de routa para volta para pagina home</h2>
 
 
-<a href="/produtos"> volta para home </a>
+<a href="/produtos"> voltar </a>
 @endsection

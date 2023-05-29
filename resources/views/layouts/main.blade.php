@@ -25,6 +25,29 @@
 
     </head>
     <body class="antialiased">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapase" id="navbar">
+                <a href="/" class="navbar-brad">
+                    <img src="\public\img\7.jpg"> </img>
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a href="/" class="nav-link"> eventos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/" class="nav-link"> Criar eventos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/" class="nav-link"> Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="/" class="nav-link"> Cadastra</a>
+                    </li>
+                </ul>
+            </div>
+         </nav>   
+        </header>
         <h1> Hello pagina Main </h1>
         @yield('content')
             <footer>

@@ -16,9 +16,6 @@
         <link rel="stylesheet" href="/css/styles.css">
         <script src="/Js/scripts.js"> </script>
         <img src="/img/eventos-2023-calendario-inovacao-960x540.jpg" > 
-        
-       
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
       
