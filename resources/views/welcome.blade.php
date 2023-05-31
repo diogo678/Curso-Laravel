@@ -3,26 +3,32 @@
 @section('title', 'HDC Events')
 
 @section('content')
-    <img src="/img/Eventos-ecommerce-2020.jpg" class="banner" style=""> </img>
-        <h1> Algum titulo</h1>
-        @if(10 > 5)
-        <p>A condição é true</p>
-        @endif
-            <p>{{$nome}}</p>
-                @if($nome == "pedro")
-                    <p>O resultado da condição é {{$nome}}</p>
-                        @elseif($nome == "Matheus") 
-                            <p> a idade de {{$nome}} é {{$idade}}</p>
-                @else 
-                    <p>O nome dele é Pedro</p>            
-                @endif
 
-                @for($i = 0; $i < count($arr); $i++)
-                    <p>{{ $arr [$i] }}</p>
-                @endfor
+<div id="search-container" class="col-md-12">
 
-                @foreach($nomes as $nome)
-                    <p>{{$loop->index}}</p>    
-                    <p>{{ $nome }}</p>
-                @endforeach
-                @endsection
+    <h1>Busque um evento</h1>
+    <form action="">
+        <input type="text" id="search" name="search" class="form-control" placeholder="Procurar">
+
+    </form>
+</div>
+<div id="events-container" class="col-md-12">
+    <h2>Proximos eventos</h2>
+    <p>Veja os eventos dos proximos dias</p>
+    <div id="cards-container" class="row">
+        @foreach ($events as $event)
+        <div class="card col-md-3">
+            <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
+            <div class="card-date">
+                <p>10/09/2022</p>
+                <h5 class="card-title">{{$event->title}}</h5>
+                <p class="crad-particpants">x participantes</p>
+                <a href="/" class="btn btn-primary" id="botao-primary">Saber mais</a>
+            </div>
+        </div>
+
+        @endforeach
+    </div>
+</div>
+
+@endsection

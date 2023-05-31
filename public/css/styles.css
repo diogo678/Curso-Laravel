@@ -10,6 +10,72 @@ h1{
 
     z-index: 2;
 }
+
+body{
+
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+header{
+    background-color: honeydew;
+    border-bottom: 1px solid #ccc;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.crad-particpants {
+    font-size: 16px;
+    color: #212121;
+    m
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0000;
+    border-color: #0000;
+}
+#botao-primary{
+    color: #fff;
+    background-color: #f2a340;
+    border-color: #c28008;
+    
+}
+#botao-primary:hover{
+    background-color: #c28008;
+    border-color: #c28008;
+}
+#navbar img{
+    width: 80px;
+}
+#navbar{
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+#navbar a {
+    font-size:20px;
+    color: #757575;
+
+}
+#navbar a:hover{
+    color:#f2a340;
+}
+#search-container{
+    background-image: url("../img/Eventos-ecommerce-2020.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+#search-container h1{
+    color: rgb(214, 122, 127);
+    margin-bottom: 30px;
+    font-weight: 900;
+}
 .logo{
     width: 100px; 
     height: 100px;
@@ -18,4 +84,82 @@ h1{
     margin-left:0% ;
     height:70%;
     width:100%;
+}
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#events-container{
+    padding: 50px;
+}
+
+#events-container h2{
+    margin-bottom: 10px;
+}
+
+#events-container .subtitle{
+   color: #757575;
+   margin-bottom: 30px;
+
+}
+
+#cards-container {
+    display: flex;
+}
+#events-container .card{
+    flex: 1 1 0 ;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 5px;
+}
+
+#events-container img{
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+
+}
+
+.card .card-date{
+    font-size: 12px;
+    color:#757575;
+    margin: 10px;
+
+}
+.card .card-title{
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  
+}
+.crad-particpants{
+    font-size: 16px;
+    color: #212121;
+}
+
+footer{
+    text-align: center;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+.msg{
+    background-color: #d4edda;
+    color:#155724;
+    border:1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
 }
