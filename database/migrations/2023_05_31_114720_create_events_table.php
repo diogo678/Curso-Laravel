@@ -18,10 +18,13 @@ class CreateEventsTable extends Migration
                 $table->id();
                 $table->timestamps();
                 $table-> string('title');
+                $table-> dateTime('date');
                 $table->text('description');
                 $table-> string('city');
                 $table->boolean("private");
                 $table->string('image');
+                $table->longtext('items');
+                $table->foreignId('user_id')->constrained();
           
         });
     }
@@ -34,5 +37,8 @@ class CreateEventsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('events');
+        $table->foreignId('user_id')
+        ->constrained()
+        ->onDelete('cascade');
     }
 }

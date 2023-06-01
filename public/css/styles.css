@@ -32,11 +32,41 @@ header{
     color: #212121;
     m
 }
-.btn-primary {
-    color: #fff;
-    background-color: #0000;
-    border-color: #0000;
+#image-container, 
+#info-container{
+    margin-top: 30px;
 }
+
+#image-container img{
+    border-radius: 10px;
+}
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+
+}
+#info-container p{
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+
+}
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit{
+    margin: 20px 0;
+}
+
 #botao-primary{
     color: #fff;
     background-color: #f2a340;
@@ -163,3 +193,16 @@ footer p{
     text-align: center;
     padding: 10px;
 }
+#description-container{
+    margin-top: 30px;
+
+}
+.dashboard-title-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.dashboard-events-cotnainer th{
+    width: 25%;
+    
+}
+
