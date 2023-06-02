@@ -13,9 +13,12 @@
         <div id="info-container" class="col-md-6">
                 <h1>{{$event->title}}</h1>
                 <p class="event-city"><ion-icon name="location-outline"></ion-icon> {{ $event->city}}</p>
-                <p class="events-participantes"><ion-icon name="people-outline"></ion-icon> Xparticipantes</p>
+                <p class="events-participantes"><ion-icon name="people-outline"></ion-icon> {{count( $event->users)}} participantes</p>
                 <p class="events-owner"><ion-icon name="star-outline"></ion-icon> {{ $eventOwner['name'] }}</p>
-                <a href="#" class="btn btn-primary" id="event-submit">Confirma Presença</a>
+               <form action="/events/join/{{$event->id}}" method="POST">
+                @csrf
+               <a href="/events/join/{{$event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault(); this.closest('form').submit();">Confirma Presença</a>
+               </form>
 
         </div>
         <div class="col-md-12" id="description-container">
